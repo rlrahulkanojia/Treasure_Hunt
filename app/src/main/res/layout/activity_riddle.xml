@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#000"
+    android:layout_height="match_parent"
+    tools:context=".Riddle">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:text="Riddles will be displayed here"
+        android:textSize="22dp"
+        android:textColor="#FFF"
+        android:visibility="invisible"
+         />
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="hint"
+        android:id="@+id/hint"
+        android:textSize="10dp"
+        android:onClick="testd"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/name"
+        android:background="@drawable/round_button"
+        />
+    <Button
+        android:id="@+id/audio"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="Audio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@drawable/round_button"
+        android:visibility="invisible"
+        android:onClick="audiodone"
+        />
+    <ImageView
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:src="@drawable/human"
+        android:id="@+id/name"
+        android:tint="#FFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:text="Capture"
+        android:background="@drawable/round_button"
+        android:onClick="camera"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="342dp"
+        />
+
+</RelativeLayout>

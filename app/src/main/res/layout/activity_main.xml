@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_width="370dp"
+        android:layout_height="370dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/human"
+        android:tint="#FFFF"
+        />
+    <ProgressBar
+
+        android:id="@+id/circularProgressbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="275dp"
+        android:layout_height="275dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:progressDrawable="@drawable/gradient_progress"
+        android:secondaryProgress="100"
+        />
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/clue7"
+        android:text="Clue 7"
+        android:textSize="13dp"
+        android:onClick="next7"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="@drawable/round_button"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text="Clue 1"
+        android:id="@+id/clue1"
+        android:textSize="10dp"
+        android:onClick="next"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/clue7"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/round_button"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:text="Clue 2"
+        android:textSize="10dp"
+        android:layout_toRightOf="@id/clue7"
+        android:layout_above="@id/clue7"
+        android:layout_marginLeft="40dp"
+        android:onClick="next2"
+        android:id="@+id/clue2"
+        android:visibility="invisible"
+        android:layout_marginBottom="-5dp"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:text="Clue 3"
+        android:textSize="10dp"
+        android:id="@+id/clue3"
+        android:visibility="invisible"
+        android:layout_toRightOf="@id/clue7"
+        android:layout_below="@id/clue7"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="40dp"
+        android:onClick="next3"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:text="Clue 4"
+        android:id="@+id/clue4"
+        android:textSize="10dp"
+        android:layout_below="@id/clue7"
+        android:onClick="next4"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/round_button"
+        android:text="Clue 5"
+        android:textSize="10dp"
+        android:id="@+id/clue5"
+        android:layout_toLeftOf="@id/clue7"
+        android:layout_below="@id/clue7"
+        android:layout_marginTop="-5dp"
+        android:visibility="invisible"
+        android:layout_marginRight="40dp"
+        android:onClick="next5"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        android:background="@drawable/round_button"
+        android:text="Clue 6"
+        android:textSize="10dp"
+        android:layout_toLeftOf="@id/clue7"
+        android:layout_above="@id/clue7"
+        android:layout_marginRight="40dp"
+        android:onClick="next6"
+        android:id="@+id/clue6"
+        android:layout_marginBottom="-5dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="Congratulations ,Now Reach from where you started to complete your HUNT"
+        android:textSize="16dp"
+        android:fontFamily="serif-monospace"
+        android:textColor="#FFF"
+        android:visibility="invisible"/>
+</RelativeLayout>
